@@ -1,0 +1,27 @@
+/* Author : Ananthu A S */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 60px;
+    color: #1c6758;
+}
+.bg_container {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #1c6758, #3d8361);
+}
+.bg_form {
+    background-color: #b1d7b4;
+    width: fit-content;
+    height: auto;
+}
+.frm > div {
+    margin-bottom: 20px;
+}
+.frm > div label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a4d2e;
+}
