@@ -22,12 +22,12 @@
 
                 <form action="" class="frm p-3" onsubmit="return validate()">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <label for="" class="col-form-label"
                                 >Full names <sup>*</sup> :</label
                             >
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <input
                                 type="text"
                                 placeholder="Enter Name"
@@ -37,28 +37,29 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <label for="" class="col-form-label"
                                 >Email address<sup>*</sup>:</label
                             >
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <input
-                                type="text"
+                                type="email"
                                 id="mail"
+                                placeholder="Email"
                                 class="rounded-2 form-control"
                             />
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <label for="" class="col-form-label"
                                 >Select Tour Package<sup>*</sup>:</label
                             >
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <select name="" id="select_it" class="form-control">
-                                <option value="0">select</option>
+                                <option value="0">Select Tour Package</option>
                                 <option value="1">Goa</option>
                                 <option value="2">Delhi</option>
                                 <option value="3">Manali</option>
@@ -66,12 +67,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <label for="" class="col-form-label"
                                 >Arrival date<sup>*</sup>:</label
                             >
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <input
                                 type="date"
                                 placeholder="mm/dd/yy"
@@ -81,12 +82,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <label for="" class="col-form-label"
                                 >Number of persons<sup>*</sup>:</label
                             >
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <input
                                 type="text"
                                 id="person"
@@ -95,14 +96,14 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <label for=""
                                 >What would you want to avail?<sup
                                     >*</sup
                                 ></label
                             >
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="row">
                                 <div class="col-6">
                                     <label for="cb1">Boarding</label>
@@ -130,24 +131,28 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <label for="" class="col-form-label"
                                 >Discount Coupon code</label
                             >
                         </div>
-                        <div class="col-4">
-                            <input type="text" class="rounded-2 form-control" />
+                        <div class="col-sm-4">
+                            <input
+                                type="text"
+                                class="rounded-2 form-control"
+                                placeholder="eg-1234"
+                            />
                         </div>
                     </div>
                     <div class="row">
-                        <label for="" class="col-4"
+                        <label for="" class="col-sm-4"
                             >Terms and conditions<sup>*</sup></label
                         >
-                        <div class="col-3">
+                        <div class="col-sm-3">
                             <input type="radio" name="TC" id="tc1" />
                             <label for="tc1">I agree</label>
                         </div>
-                        <div class="col-3">
+                        <div class="col-sm-3">
                             <input type="radio" name="TC" id="tc2" />
                             <label for="tc2">I disagree</label>
                         </div>
