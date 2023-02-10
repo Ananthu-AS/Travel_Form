@@ -5,8 +5,15 @@
     box-sizing: border-box;
 }
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     color: #1c6758;
+}
+sup {
+    color: #f96666;
+    font-size: large;
+}
+.mandatory {
+    color: #f96666;
 }
 .bg_container {
     min-height: 100vh;
@@ -18,10 +25,11 @@ h1 {
     height: auto;
 }
 .frm > div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .frm > div label {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    border: none;
     color: #1a4d2e;
 }

@@ -18,67 +18,151 @@
         <div class="container-fluid bg_container d-flex">
             <div class="container-fluid bg_form align-self-center rounded-4">
                 <h1>Travel reservation form</h1>
-                <p class="text-success">* denotes mandotory</p>
+                <p class="mandatory">* denotes mandotory</p>
 
                 <form action="" class="frm p-3" onsubmit="return validate()">
-                    <div>
-                        <label for="">Full name*:</label>
-                        <input type="text" placeholder="Enter Name" id="name" />
-                    </div>
-                    <div>
-                        <label for="">Email address*:</label>
-                        <input type="text" id="mail" />
-                    </div>
-                    <div>
-                        <label for="">Select Tour Package*:</label>
-                        <select name="" id="select_it">
-                            <option value="0">select</option>
-                            <option value="1">Goa</option>
-                            <option value="2">Delhi</option>
-                            <option value="3">Manali</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">Arrival date*:</label>
-                        <input type="date" placeholder="mm/dd/yy" id="date" />
-                    </div>
-                    <div>
-                        <label for="">Number of persons*:</label>
-                        <input type="text" id="person" />
-                    </div>
-                    <div>
-                        <div>
-                            <label for="">What would you want to avail?*</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="" class="col-form-label"
+                                >Full names <sup>*</sup> :</label
+                            >
                         </div>
-                        <div>
-                            <label for="cb1">Boarding</label>
-                            <input type="checkbox" id="cb1" />
-                        </div>
-                        <div>
-                            <label for="cb2">Fooding</label>
-                            <input type="checkbox" id="cb2" />
-                        </div>
-                        <div>
-                            <label for="cb3">Sight seeing</label>
-                            <input type="checkbox" id="cb3" />
+                        <div class="col-6">
+                            <input
+                                type="text"
+                                placeholder="Enter Name"
+                                id="name"
+                                class="rounded-2 form-control"
+                            />
                         </div>
                     </div>
-                    <div>
-                        <label for="">Discount Coupon code</label>
-                        <input type="text" />
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="" class="col-form-label"
+                                >Email address<sup>*</sup>:</label
+                            >
+                        </div>
+                        <div class="col-6">
+                            <input
+                                type="text"
+                                id="mail"
+                                class="rounded-2 form-control"
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label for="">Terms and conditions*</label>
-                        <input type="radio" name="TC" id="tc1" />
-                        <label for="tc1">I agree</label>
-                        <input type="radio" name="TC" id="tc2" />
-                        <label for="tc2">I disagree</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="" class="col-form-label"
+                                >Select Tour Package<sup>*</sup>:</label
+                            >
+                        </div>
+                        <div class="col-6">
+                            <select name="" id="select_it" class="form-control">
+                                <option value="0">select</option>
+                                <option value="1">Goa</option>
+                                <option value="2">Delhi</option>
+                                <option value="3">Manali</option>
+                            </select>
+                        </div>
                     </div>
-                    <input
-                        type="submit"
-                        value="Complete reservation"
-                        class="btn btn-success"
-                    />
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="" class="col-form-label"
+                                >Arrival date<sup>*</sup>:</label
+                            >
+                        </div>
+                        <div class="col-6">
+                            <input
+                                type="date"
+                                placeholder="mm/dd/yy"
+                                id="date"
+                                class="rounded-2 form-control"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="" class="col-form-label"
+                                >Number of persons<sup>*</sup>:</label
+                            >
+                        </div>
+                        <div class="col-6">
+                            <input
+                                type="text"
+                                id="person"
+                                class="rounded-2 form-control"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for=""
+                                >What would you want to avail?<sup
+                                    >*</sup
+                                ></label
+                            >
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="cb1">Boarding</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" id="cb1" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="cb2">Fooding</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" id="cb2" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="cb3">Sight seeing</label>
+                                </div>
+                                <div class="col-2">
+                                    <input type="checkbox" id="cb3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="" class="col-form-label"
+                                >Discount Coupon code</label
+                            >
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="rounded-2 form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="" class="col-4"
+                            >Terms and conditions<sup>*</sup></label
+                        >
+                        <div class="col-3">
+                            <input type="radio" name="TC" id="tc1" />
+                            <label for="tc1">I agree</label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" name="TC" id="tc2" />
+                            <label for="tc2">I disagree</label>
+                        </div>
+                    </div>
+                    <div
+                        class="container-fluid d-flex justify-content-center m-0"
+                    >
+                        <div>
+                            <input
+                                type="submit"
+                                value="Complete reservation"
+                                class="btn btn-success"
+                            />
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
